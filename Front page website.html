@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#welcome-section" class="nav-link">Home</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="https://github.com/yourusername" id="profile-link" target="_blank">GitHub</a></li>
+        </ul>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome-section">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Muhammad Talha Shakeel, a passionate developer!</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-tile">
+            <a href="https://example.com/project1" target="_blank">Project 1</a>
+        </div>
+        <div class="project-tile">
+            <a href="https://example.com/project2" target="_blank">Project 2</a>
+        </div>
+        <div class="project-tile">
+            <a href="https://example.com/project3" target="_blank">Project 3</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: example@email.com</p>
+    </section>
+</body>
+</html>
+CSS
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+#navbar {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Welcome Section */
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffcc33, #ff6600);
+    color: white;
+    text-align: center;
+}
+
+#welcome-section h1 {
+    font-size: 3em;
+}
+
+#welcome-section p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.project-tile {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-tile a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.project-tile a:hover {
+    color: #ff6600;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-tile {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
