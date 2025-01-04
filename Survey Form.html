@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Page Title -->
+    <h1 id="title">Survey Form</h1>
+
+    <!-- Short Description -->
+    <p id="description">Please fill out the form below to help us gather your feedback.</p>
+
+    <!-- Survey Form -->
+    <form id="survey-form">
+
+        <!-- Name Input -->
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <!-- Email Input -->
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Number Input -->
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" name="number" min="10" max="100" placeholder="Enter your age" required>
+
+        <!-- Dropdown (Select Element) -->
+        <label for="dropdown">Which option best describes your role?</label>
+        <select id="dropdown" name="role">
+            <option value="student">Student</option>
+            <option value="full-time-job">Full-Time Job</option>
+            <option value="part-time-job">Part-Time Job</option>
+            <option value="unemployed">Unemployed</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <p>How satisfied are you with our service?</p>
+        <input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied" required>
+        <label for="very-satisfied">Very satisfied</label><br>
+        <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+        <label for="satisfied">Satisfied</label><br>
+        <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+        <label for="dissatisfied">Dissatisfied</label>
+
+        <!-- Checkboxes -->
+        <p>What would you like to improve? (Select all that apply)</p>
+        <input type="checkbox" id="frontend" name="improvement" value="frontend">
+        <label for="frontend">Front-end Projects</label><br>
+        <input type="checkbox" id="backend" name="improvement" value="backend">
+        <label for="backend">Back-end Projects</label><br>
+        <input type="checkbox" id="design" name="improvement" value="design">
+        <label for="design">Design</label>
+
+        <!-- Textarea -->
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
+CSS
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#survey-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
